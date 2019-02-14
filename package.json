@@ -2,8 +2,11 @@
   "name": "@fvlab/dialogflow-response-builder",
   "version": "1.0.0",
   "description": "A set of tools to abstract the building of responses for Dialogflow fulfilment logic",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/FairVenturesLab/dialogflow-response-builder/issues"
   },
-  "homepage": "https://github.com/FairVenturesLab/dialogflow-response-builder#readme"
+  "homepage": "https://github.com/FairVenturesLab/dialogflow-response-builder#readme",
+  "devDependencies": {
+    "tslint": "^5.8.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "actions-on-google": "^2.5.0",
+    "dialogflow-fulfillment": "^0.6.1"
+  }
 }
