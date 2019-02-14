@@ -1,6 +1,6 @@
 {
   "name": "@fvlab/dialogflow-response-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of tools to abstract the building of responses for Dialogflow fulfilment logic",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
